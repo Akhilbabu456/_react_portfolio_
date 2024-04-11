@@ -1,0 +1,50 @@
+@import "../../App.scss";
+
+.navbar{
+    height: 100px;
+
+    .wrapper{
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+
+        @include mobile{
+           justify-content: flex-end;
+           padding: 20px;
+        }
+
+    span{
+        font-weight: bold;
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    .social{
+        display: flex;
+        gap: 10px;
+       
+        img{
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .social:hover{
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .logo{
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+        cursor: pointer;
+    }
+
+}
+}

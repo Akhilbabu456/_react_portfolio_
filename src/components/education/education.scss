@@ -1,0 +1,132 @@
+
+.timeline-section {
+    background: linear-gradient(180deg, #111132, #0c0c1d);
+    padding: 100px 15px;
+
+    .heading{
+        text-align: center;
+        font-size: 65px;
+        font-weight: bold;
+        color: #FFA500;
+    }
+  
+    h2 {
+      margin-bottom: 5rem;
+    }
+  
+    .timeline-items {
+      max-width: 1000px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+  
+      &::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: #663399;
+        left: calc(50% - 1px);
+      }
+    }
+  
+    .timeline-item {
+      margin-bottom: 40px;
+      width: 100%;
+      position: relative;
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      &:nth-child(odd) {
+        padding-right: calc(50% + 30px);
+        text-align: right;
+  
+        @media (max-width: 995px) {
+          padding-right: 0;
+          text-align: center;
+        }
+      }
+  
+      &:nth-child(even) {
+        padding-left: calc(50% + 30px);
+  
+        @media (max-width: 995px) {
+          padding-left: 37px;
+        }
+      }
+  
+      .timeline-dot {
+        height: 21px;
+        width: 21px;
+        background-color: #663399;
+        box-shadow: 0 0 25px #663399;
+        position: absolute;
+        left: calc(50% - 8px);
+        border-radius: 50%;
+        top: 10px;
+  
+        @media (max-width: 995px) {
+          left: 0;
+        }
+      }
+  
+      .timeline-date {
+        font-size: 20px;
+        font-weight: 800;
+        color: #d3d3d3;
+        margin: 6px 0 15px;
+      }
+  
+      .timeline-content {
+        background-color: #161633;
+        backdrop-filter: blur(20px);
+        border: 2px solid #663399;
+        box-shadow: 0 0 10px #663399;
+        padding: 30px;
+        border-radius: 1em;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+  
+        &:hover {
+          transform: scale(1.05);
+          box-shadow: 0 0 25px #663399;
+        }
+  
+        h3 {
+          font-size: 20px;
+          color: #d3d3d3;
+          margin: 0 0 10px;
+          text-transform: capitalize;
+          font-weight: 800;
+        }
+  
+        p {
+          color: #d3d3d3;
+          opacity: 0.8;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22px;
+        }
+      }
+    }
+  
+    @media (max-width: 995px) {
+      .timeline-items::before {
+        left: 7px;
+      }
+  
+      .timeline-dot {
+        left: 0;
+      }
+    }
+  
+    @media (max-width: 320px) {
+      .heading {
+        font-size: 7rem;
+      }
+    }
+  }
+  
