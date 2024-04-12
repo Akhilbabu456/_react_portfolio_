@@ -42,11 +42,13 @@ section{
     padding-top: 100px ;
     padding-left: 50px;
     padding-right: 50px;
+    scroll-snap-align: center;
     background: linear-gradient(180deg, #111132, #0c0c1d);
 }
 
 .education{
     height: 130vh;
+    scroll-snap-align: center;
 }
 
 

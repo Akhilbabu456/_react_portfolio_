@@ -1,7 +1,12 @@
+@import "../../App.scss";
 
 .timeline-section {
     background: linear-gradient(180deg, #111132, #0c0c1d);
     padding: 100px 15px;
+
+    @include mobile{
+      margin-bottom: 150px;
+    }
 
     .heading{
         text-align: center;
@@ -20,6 +25,8 @@
       display: flex;
       flex-wrap: wrap;
       position: relative;
+
+     
   
       &::before {
         content: '';
@@ -35,6 +42,13 @@
       margin-bottom: 40px;
       width: 100%;
       position: relative;
+
+      @include mobile{
+        transform: none !important;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+     }
   
       &:last-child {
         margin-bottom: 0;
@@ -45,6 +59,7 @@
         text-align: right;
   
         @media (max-width: 995px) {
+          padding-left: 37px;
           padding-right: 0;
           text-align: center;
         }

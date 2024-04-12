@@ -1,3 +1,5 @@
+@import "../../App.scss";
+
 .contact{
    height: 100%;
    max-width: 1366px;
@@ -6,15 +8,33 @@
    align-items: center;
    gap: 50px;
 
+   @include mobile{
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+ }
+
    .textContainer{
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 40px;
 
+    @include mobile{
+        gap: 20px;
+        text-align: center;
+        align-items: center;
+        margin-top: 110px;
+     }
+
     h1{
         font-size: 100px;
         line-height: 88px;
+
+        @include mobile{
+            font-size: 40px;
+            margin-top: 120px;
+         }
     }
 
     span{
@@ -26,6 +46,11 @@
    .formContainer{
     flex: 1;
     position: relative;
+    
+    @include mobile{
+        width: 100%;
+        padding: 50px;
+     }
 
     .phoneSvg{
         stroke: #FFA500;
@@ -46,6 +71,10 @@
             border: 1px solid #fff;
             color: #fff;
             border-radius: 5px;
+
+            @include mobile{
+               padding: 10px;
+             }
         }
         
         button{
@@ -56,6 +85,10 @@
             border-radius: 5px;
             font-weight: 800;
             font-size: 15px;
+
+            @include mobile{
+                padding: 10px;
+             }
         }
     }
 
