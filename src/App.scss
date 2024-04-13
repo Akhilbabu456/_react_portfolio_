@@ -1,7 +1,8 @@
+
 html{
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    //overflow-x: hidden;
 }
 
 *{
@@ -20,7 +21,7 @@ body{
 
    
     &::-webkit-scrollbar {
-        display: none;
+        width: 0px;
       }
       &::-webkit-scrollbar-track {
         background-color: #d3d3d3; 
@@ -39,15 +40,17 @@ a{
 
 section{
     height: 100vh;
-   // scroll-snap-align: center;
+    //scroll-snap-align: center;
 }
+
+
 
 .skills{
     height: 100vh;
     padding-top: 100px ;
     padding-left: 50px;
     padding-right: 50px;
-  //  scroll-snap-align: center;
+  // scroll-snap-align: center;
     background: linear-gradient(180deg, #111132, #0c0c1d);
 }
 

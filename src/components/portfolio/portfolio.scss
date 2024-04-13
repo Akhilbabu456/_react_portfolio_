@@ -93,7 +93,7 @@
                 flex: 1;
                 display: flex;
                 flex-direction: column;
-                gap: 30px;
+                gap: 10px;
 
                 @include laptop{
                     height: 50%;
@@ -110,10 +110,12 @@
                     padding: 10px;
                     align-items: center;
                     text-align: center;
+        
                  }
 
                 h2{
                     font-size: 50px;
+                    margin-bottom: 9px;
                     @include laptop{
                         font-size: 40px;
                     }

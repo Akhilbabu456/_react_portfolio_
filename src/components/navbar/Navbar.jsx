@@ -13,9 +13,9 @@ const Navbar = () => {
              transition={{duration: 0.5}}
             >Akhil Babu S</motion.span>
             <div className="social">
-                <a href="#"><img src="/linkedin.png" alt="" /></a>
-                <a href="#"><img src="/github.png" alt="" /></a>
-                <a href="#"><img src="/instagram.png" alt="" /></a>
+                <a href="https://www.linkedin.com/in/akhilbabu456/"><img src="/linkedin.png" alt="" /></a>
+                <a href="https://github.com/Akhilbabu456"><img src="/github.png" alt="" /></a>
+                <a href="https://instagram.com/mr__.rip.__rider?igshid=OGQ5ZDc2ODk2ZA=="><img src="/instagram.png" alt="" /></a>
             </div>
         </div>
     </div>
