@@ -13,9 +13,13 @@
         color: #FFA500;
         font-size: 40px;
 
+        @include tablet{
+            font-size: 25px;
+        }
+
         @include mobile{
-            padding-top: calc(100vh - 100px) ;
-            font-size: 24px;
+           
+            font-size: 20px;
          }
 
         .progressBar{
@@ -42,13 +46,25 @@
             justify-content: center;
             gap: 50px;
 
-            @include mobile{
+            @include tablet{
                flex-direction: column;
              }
 
             .imageContainer{
                 flex: 1;
                 height: 50%;
+
+                @include laptop{
+                    height: 50%;
+                    width: 100%;
+                    display: flex; 
+                    justify-content: center;
+                    align-items: center;
+
+                }
+                @include tablet {
+                    margin-top: 220px;
+                }
                 @include mobile{
                     width: 100%;
                     max-height: 300px;
@@ -59,9 +75,16 @@
                     height: 100%;
                     object-fit: cover;
 
+                    @include tablet{
+                        width: 60%;
+                        height: 100%;
+                        object-fit: contain;
+                        position: relative;
+                        top: 110px;
+                    }
+
                     @include mobile{
                        object-fit: contain;
-                       margin: 6px;
                      }
                 }
             }
@@ -72,8 +95,18 @@
                 flex-direction: column;
                 gap: 30px;
 
+                @include laptop{
+                    height: 50%;
+                    width: 90%;
+                    align-items: center;
+                    text-align: center;
+                }
+                @include tablet{
+                    margin-top: 340px;
+                }
+
                 @include mobile{
-                    transform: none !important;
+                    // transform: none !important;
                     padding: 10px;
                     align-items: center;
                     text-align: center;
@@ -81,17 +114,27 @@
 
                 h2{
                     font-size: 50px;
+                    @include laptop{
+                        font-size: 40px;
+                    }
+                    @include tablet{
+                        font-size: 35px;
+                    }
                     @include mobile{
-                      font-size: 36px;
+                      font-size: 30px;
                      }
                 }
 
                 p{
                     color: #808080;
                     font-size: 20px;
+                    @include tablet{
+                        font-size: 18px;
+                     }
                     @include mobile{
                         font-size: 16px;
-                     }
+                    }
+                   
                 }
 
                 button{

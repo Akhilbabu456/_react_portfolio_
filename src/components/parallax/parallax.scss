@@ -12,8 +12,13 @@
     h1{
         font-size: 100px;
 
+        @include tablet{
+            font-size: 62px;
+            text-align: center;
+
+        }
         @include mobile{
-            font-size: 72px;
+            font-size: 42px;
             text-align: center;
 
         }
@@ -28,7 +33,7 @@
         position: absolute;
         z-index: 3;
 
-        @include mobile{
+        @include tablet{
            background-size: contain;
            background-repeat: no-repeat;
 
@@ -42,7 +47,7 @@
         height: 100%;
         position: absolute;
         z-index: 2;
-        @include mobile{
+        @include tablet{
             background-size: contain;
             background-repeat: no-repeat;
  

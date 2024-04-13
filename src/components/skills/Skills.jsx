@@ -17,8 +17,8 @@ const Skills = () => {
     
     const variants = {
         initial: {
-            x: -500,
-            y: 100,
+            x: 100,
+            y: -500,
             opacity: 0
         },
         animate: {
@@ -39,15 +39,15 @@ const Skills = () => {
           items: 5
         },
         desktop: {
-          breakpoint: { max: 3000, min: 1024 },
+          breakpoint: { max: 3000, min: 724 },
           items: 3
         },
         tablet: {
-          breakpoint: { max: 1024, min: 464 },
+          breakpoint: { max: 724, min: 564 },
           items: 2
         },
         mobile: {
-          breakpoint: { max: 464, min: 0 },
+          breakpoint: { max: 564, min: 0 },
           items: 1
         }
       };
