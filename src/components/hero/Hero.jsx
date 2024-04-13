@@ -1,5 +1,7 @@
 import "./hero.scss"
 import {motion} from "framer-motion"
+import styled from "styled-components";
+import { Tilt } from "react-tilt";
 
 const textVariants = {
     initial: {
@@ -37,6 +39,21 @@ const sliderVariants = {
         }
     },
 }
+
+const Img = styled.img`
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+
+  @media (max-width: 640px) {
+    max-width: 280px;
+    max-height: 280px;
+  }
+`;
+
+
 const Hero = () => {
   return (
     <div className="hero">
@@ -54,9 +71,13 @@ const Hero = () => {
         <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate" >
             MERN Stack Developer
         </motion.div>
-        <div className="imageContainer">
-            <img src="/hero.png" alt="" />
-        </div>
+        
+              <motion.div className="imageContainer">
+                <Tilt>
+                  <Img src="/hero.png" alt="Rishav Chanda" />
+                </Tilt>
+              </motion.div>
+        
     </div>
   )
 }

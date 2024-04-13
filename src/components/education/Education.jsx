@@ -1,57 +1,77 @@
-import "./education.scss"
-import {motion} from "framer-motion"
+import React from "react";
+import styled from "styled-components";
+import { education } from "../../data/constants";
+import EducationCard from "../cards/EducationCard";
+import { VerticalTimeline } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
-const variants = {
-    initial: {
-        x: -500,
-        y: 100,
-        opacity: 0
-    },
-    animate: {
-        x: 0,
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 1,
-            staggerChildren: 0.1
-        }
-    }
-}
+const Container = styled.div`
+margin-top: 100px;
+display: flex;
+flex-direction: column;
+justify-content-center;
+position: relative;
+z-index: 1;
+align-items: center;
+`;
+const Wrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  gap: 12px;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`;
+
+const Title = styled.div`
+  font-size: 52px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 20px;
+  color: ${({ theme }) => theme.text_primary};
+  @media (max-width: 768px) {
+    margin-top: 12px;
+    font-size: 32px;
+  }
+`;
+
+const Desc = styled.div`
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_secondary};
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+`;
 
 const Education = () => {
   return (
-    <section className="timeline-section" id="education">
-    <h2 className="heading">Education</h2>
+    <Container id="Education">
+      <Wrapper>
+        <Title>Education</Title>
+        <Desc
+          style={{
+            marginBottom: "40px",
+          }}
+        >
+          My education has been a journey of self-discovery and growth. My
+          educational details are as follows.
+        </Desc>
 
-    <div className="timeline-items" >
-        <motion.div className="timeline-item" variants={variants} initial="initial" whileInView={"animate"}>
-            <div className="timeline-dot"></div>
-            <div className="timeline-date">2017</div>
-            <div className="timeline-content">
-                <h3>High School</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores assumenda dignissimos officia repudiandae quisquam eos dicta possimus rerum adipisci dolores, quod culpa reiciendis aspernatur eveniet, obcaecati, quo animi labore nobis.</p>
-            </div>
-        </motion.div>
-        <motion.div className="timeline-item" variants={variants} initial="initial" whileInView={"animate"}>
-            <div className="timeline-dot"></div>
-            <div className="timeline-date">2017-2019</div>
-            <div className="timeline-content">
-                <h3>Higher Secondary</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores assumenda dignissimos officia repudiandae quisquam eos dicta possimus rerum adipisci dolores, quod culpa reiciendis aspernatur eveniet, obcaecati, quo animi labore nobis.</p>
-            </div>
-        </motion.div>
-        <motion.div className="timeline-item" variants={variants} initial="initial" whileInView={"animate"}>
-            <div className="timeline-dot"></div>
-            <div className="timeline-date">2019-2023</div>
-            <div className="timeline-content">
-                <h3>Diploma Mechanical</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores assumenda dignissimos officia repudiandae quisquam eos dicta possimus rerum adipisci dolores, quod culpa reiciendis aspernatur eveniet, obcaecati, quo animi labore nobis.</p>
-            </div>
-        </motion.div>
-       
-    </div>
-</section>
-  )
-}
+        <VerticalTimeline>
+          {education.map((education, index) => (
+            <EducationCard key={`education-${index}`} education={education} />
+          ))}
+        </VerticalTimeline>
+      </Wrapper>
+    </Container>
+  );
+};
 
-export default Education
+export default Education;

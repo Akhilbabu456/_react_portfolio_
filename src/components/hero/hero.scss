@@ -102,12 +102,15 @@
         position: absolute;
         top: 0;
         right: 0;
+        padding-top: 120px;
+        padding-right: 130px;
         
 
         @include laptop{
             height: 100%;
             width: 50%;
             display: flex; 
+            padding: 0;
             justify-content: center;
             align-items: center; 
             top: unset;
@@ -118,6 +121,7 @@
         @include tablet{
         height: 50%;
         width: 100%;
+        padding: 0;
         display: flex; 
         justify-content: center;
         align-items: center; 
