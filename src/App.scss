@@ -20,7 +20,7 @@ body{
 
    
     &::-webkit-scrollbar {
-        width: 8px;
+        display: none;
       }
       &::-webkit-scrollbar-track {
         background-color: #d3d3d3; 
