@@ -12,6 +12,7 @@
         text-align: center;
         color: #FFA500;
         font-size: 40px;
+        z-index: 999;
 
         @include tablet{
             font-size: 25px;
@@ -36,6 +37,7 @@
         height: 100%;
         width: 100%;
         overflow: hidden;
+        z-index: 990;
 
         .wrapper{
             max-width: 1366px;
