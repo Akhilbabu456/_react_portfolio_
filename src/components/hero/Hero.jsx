@@ -62,7 +62,7 @@ const Hero = () => {
             <motion.h2 variants={textVariants}>Akhil Babu S</motion.h2>
             <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
             <motion.div variants={textVariants} className="buttons">
-                <motion.a variants={textVariants} href="/Akhil_Babu_S_Resume.pdf" download={"Akhil_Babu_S_Resume.pdf"}>Download CV</motion.a>
+                <motion.a variants={textVariants} href="/Akhil_Babu_S.pdf" download={"Akhil_Babu_S.pdf"}>Download CV</motion.a>
                 <motion.a href="#Contact" variants={textVariants}>Contact Me</motion.a>
             </motion.div>
             <motion.img src="/scroll.png" alt="" variants={textVariants} animate="scrollButton"/>
@@ -74,7 +74,7 @@ const Hero = () => {
         
               <motion.div className="imageContainer">
                 <Tilt>
-                  <Img src="/hero.png" alt="Rishav Chanda" />
+                  <Img src="/hero.png" alt="Akhil Babu S" />
                 </Tilt>
               </motion.div>
         
