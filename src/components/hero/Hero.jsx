@@ -62,14 +62,14 @@ const Hero = () => {
             <motion.h2 variants={textVariants}>Akhil Babu S</motion.h2>
             <motion.h1 variants={textVariants}>Full Stack Developer</motion.h1>
             <motion.div variants={textVariants} className="buttons">
-                <motion.a variants={textVariants} href="/Akhil_Babu_S.pdf" download={"Akhil_Babu_S.pdf"}>Download CV</motion.a>
+                <motion.a variants={textVariants} href="/Akhil_Babu_S_Java_Resume.pdf" download={"Akhil_Babu_S_Java_Resume.pdf"}>Download CV</motion.a>
                 <motion.a href="#Contact" variants={textVariants}>Contact Me</motion.a>
             </motion.div>
             <motion.img src="/scroll.png" alt="" variants={textVariants} animate="scrollButton"/>
         </motion.div>
         </div>
         <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate" >
-            <span>MERN Stack Developer</span>
+            <span>Full Stack Developer</span>
         </motion.div>
         
               <motion.div className="imageContainer">

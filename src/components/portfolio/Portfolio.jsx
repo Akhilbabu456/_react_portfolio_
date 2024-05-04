@@ -5,6 +5,20 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
+    title: "InkWell Chronicles Blog website - Full Stack",
+    img: "/blog.png",
+    link: "https://github.com/Akhilbabu456/java_springboot_mastery/tree/main/java_springboot_blog",
+    desc: `I have developed InkWell Chronicles, a blog project featuring both admin and user interfaces. The admin interface offers complete control over posts, users, and comments, while the user interface enables users to sign up using their emails, with verification through Google Authentication OAuth 2.0. Users can view, search, and comment on posts, with control limited to their respective blogs.`,
+  },
+  {
+    id: 2,
+    title: "Recipe app - Recipe shareing platform ",
+    img: "/recipe.png",
+    link: "https://github.com/Akhilbabu456/recipe_app_springboot",
+    desc: `User developed a recipe sharing application using Angular, JavaScript, Tailwind CSS, SCSS, HTML, Cloudinary, Material UI, MySQL, Spring Boot, Java, JPA, and Spring Security. The project enables users to share and discover recipes, leveraging Cloudinary for image management, Material UI for UI components, and Spring Boot with Spring Security for backend services and authentication. `,
+  },
+  {
+    id: 3,
     title: "Threads Clone with Real Time chat feature - Full Stack",
     img: "/threads.png",
     link: "https://github.com/Akhilbabu456/_thread_clone_mern",
@@ -15,7 +29,7 @@ const items = [
     tracking, live video calling`
   },
   {
-    id: 2,
+    id: 4,
     title: "BookMyFilm Movie Booking App - Full Stack",
     img: "/movie.png",
     link: "https://github.com/Akhilbabu456/_movie_booking_mern",
@@ -27,34 +41,13 @@ const items = [
         `,
   },
   {
-    id: 3,
-    title: "InkWell Chronicles Blog website - Full Stack",
-    img: "/blog.png",
-    link: "https://github.com/Akhilbabu456/mern_blog",
-    desc: `I have developed InkWell Chronicles, a blog project featuring both admin and user interfaces. The admin
-    interface offers complete control over posts, users, and comments, while the user interface enables users to sign up using
-    their emails, with verification through Google Authentication OAuth 2.0. Users can view, search, and comment on posts,
-    with control limited to their respective blogs`,
-  },
-  {
-    id: 4,
+    id: 5,
     title: "Medical Store Inventory Management - React.js",
     img: "/medica.png",
     link: "https://github.com/Akhilbabu456/_react_works/tree/main",
     desc: `Medical store management website  React!  This website includes user authentication and features such as add, update, delete, and search for medical store inventory. 
 
         Using React, I was able to design a user-friendly interface that allows store owners to easily manage their inventory. The user authentication feature ensures that only authorized personnel have access to sensitive information, providing an extra layer of security. 
-        `,
-  },
-  {
-    id: 5,
-    title: "To-Do List using Node.js",
-    img: "/todo.png",
-    link: "https://github.com/Akhilbabu456/_to_do_app",
-    desc: `A to-do app using node.js and mongodb. This has been a challenging yet rewarding experience and I am excited to share it with all of you.
-
-         As a developer, I am always looking for ways to improve my skills and expand my knowledge. Building this app has allowed me to dive deeper into the world of node.js and mongodb, and I have been blown away by their capabilities.
-        
         `,
   },
 ];

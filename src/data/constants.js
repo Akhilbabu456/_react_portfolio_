@@ -23,6 +23,26 @@ export const skills = [
             "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1452px-CSS3_logo_and_wordmark.svg.png",
         },
         {
+          name: "Java",
+          image:
+            "https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png",
+        },
+        {
+          name: "Spring boot",
+          image:
+            "https://img.icons8.com/color/480w/spring-logo.png",
+        },
+        {
+          name: "MySQL",
+          image:
+            "https://banner2.cleanpng.com/20180821/lyg/kisspng-mysql-workbench-database-mysql-cluster-5b7cdc87c3dd20.3638601015349095758023.jpg",
+        },
+        {
+          name: "Tailwind CSS",
+          image:
+            "https://w7.pngwing.com/pngs/293/485/png-transparent-tailwind-css-hd-logo.png",
+        },
+        {
           name: "JavaScript",
           image:
             "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
