@@ -42,6 +42,9 @@ section{
     height: 100vh;
     //scroll-snap-align: center;
 }
+#shadow-host-companion{
+   height: 0;
+}
 
 @mixin mobile{
    @media (max-width: 425px){
