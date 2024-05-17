@@ -133,7 +133,7 @@ import { useRef } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 import EarthCanvas from "../canvas/Earth";
-import { useToast } from "@chakra-ui/react";
+
 
 const Container = styled.div`
   display: flex;
@@ -259,33 +259,9 @@ const ContactButton = styled.input`
 
 const Contact = () => {
   const form = useRef();
-  const toast = useToast();
+ 
 
   const sendEmail = (e) => {
-         e.preventDefault();
-    
-        emailjs
-           .sendForm('service_nhkz4np', 'template_z2f1o1k', form.current, {
-             publicKey: 'ZHLTFooOLy2oz7mPh',
-           })
-           .then(
-             () => {
-              toast({
-                title: 'Message sent',
-                status: 'success',
-                duration: 3000,
-                isClosable: true,
-              })
-             },
-             (error) => {    
-              toast({
-                title: error,
-                status: 'success',
-                duration: 3000,
-                isClosable: true,
-              })
-             },
-           );
            e.preventDefault();
            emailjs
                  .sendForm('service_nhkz4np', 'template_z2f1o1k', form.current, {
