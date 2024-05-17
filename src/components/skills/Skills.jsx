@@ -51,7 +51,7 @@ const SkillsContainer = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
   gap: 50px;
   justify-content: center;
 `;
@@ -124,7 +124,7 @@ const Skills = () => {
         <Title>Skills</Title>
         <Desc
           style={{
-            marginBottom: "40px",
+            marginBottom: "10px",
           }}
         >
           Here are some of my skills on which I have been working on for the
